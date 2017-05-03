@@ -19,3 +19,28 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+.idea
+*.rbc
+.DS_Store
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/public/assets
+/coverage/
+/spec/tmp
+/db/schema.rb
+/config/newrelic.yml
+/config/database.yml
+/config/configuration.yml
+**.orig
+rerun.txt
+pickle-email-*.html
+/app/assets/settings/assets_version.js
+
+
