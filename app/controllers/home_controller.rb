@@ -23,4 +23,9 @@ class HomeController < ApplicationController
     
   end
   
+  #电大
+  def rtv_university
+    
+  end
+  
 end
