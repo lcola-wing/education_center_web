@@ -43,4 +43,4 @@ rerun.txt
 pickle-email-*.html
 /app/assets/settings/assets_version.js
 Gemfile.lock
-
+/app/assets/stylesheets/.sass-cache/*
