@@ -11,4 +11,8 @@ class HomeController < ApplicationController
     
   end
   
+  def adult_entrance
+    
+  end
+  
 end
