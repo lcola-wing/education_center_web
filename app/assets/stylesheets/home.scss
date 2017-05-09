@@ -1,6 +1,17 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+ * This is a manifest file that'll be compiled into site.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add site-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree ./home
+ */
 
 * {
     padding: 0;
@@ -26,6 +37,10 @@ ul {
     width: 1188px;
     margin: 0 auto;
     overflow: hidden;
+}
+
+.none {
+    display: none;
 }
 
 header {
@@ -348,6 +363,7 @@ header {
 
 .bar span {
     float: right;
+    height: 100%;
 }
 
 .bar span a {
@@ -360,16 +376,17 @@ header {
 }
 
 .form {
-    background-color: #eeeeee;
     display: none;
 }
 
 .selected {
     display: block;
 }
-.form ul{
+
+.form ul {
     margin-right: -30px;
 }
+
 .form ul li {
     width: 226px;
     float: left;
@@ -408,4 +425,87 @@ header {
 
 .school-content .left {
     width: 50%;
+}
+
+.banner {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.news {
+    width: 387px;
+}
+
+footer {
+    width: 100%;
+    padding: 40px;
+    background-color: #3e9538;
+    overflow: hidden;
+}
+
+.foot-about {
+    width: 500px;
+    line-height: 29px;
+}
+
+.foot-about ul {
+    overflow: hidden;
+}
+
+.foot-about ul li {
+    color: #ffffff;
+    float: left;
+}
+
+.foot-about ul li a {
+    color: #ffffff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.foot-about p {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+    color: #aeffa8;
+}
+
+.foot-wechat {
+    width: 300px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+}
+
+.foot-wechat img {
+    float: left;
+    margin: 0 10px 0 40px;
+}
+
+.foot-wechat p {
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.foot-enter {
+    width: 387px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+}
+
+.foot-enter img {
+    float: left;
+    margin: 0 10px 0 160px;
+}
+
+.foot-enter p {
+    color: #ffffff;
+    line-height: 20px;
+}
+.credible-img{
+    margin-top:20px;
+    margin-left: 32px;
+}
+.credible-img img{
+    margin: 0 5px 0 5px;
 }

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
+  get 'home/distance_education' => 'home#distance_education'
    
   
   root 'home#index'

@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #454545;
+    font-family: "Microsoft YaHei", "宋体";
+}
+
+ul {
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.wrapper {
+    width: 1188px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+header {
+    height: 211px;
+}
+
+.header-t {
+    background-color: #e6e6e6;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    line-height: 30px;
+    color: #454545;
+}
+
+.header-t-container {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.header-t-r ul li {
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+}
+
+.header-t-r ul li a {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.header-t-r ul li a:hover {
+    color: red;
+}
+
+.header-c {
+    height: 121px;
+    line-height: 121px;
+}
+
+.header-c-contain {
+    width: 1188px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo-img {
+    width: 229px;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.location {
+    font-size: 10px;
+    margin-left: 10px;
+    color: #33a435;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: 250px;
+    margin-top: 46px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-type {
+    border: 2px solid #33a435;
+    line-height: 30px;
+    padding-left: 10px;
+    border-right: none;
+    color: #999999;
+}
+
+.search-input {
+    line-height: 30px;
+    border: 2px solid #33a435;
+    border-left: none;
+    border-right: none;
+}
+
+.search-input input {
+    width: 250px;
+    border: 0;
+    outline: none;
+}
+
+.search-btn {
+    line-height: 34px;
+    width: 50px;
+    height: 34px;
+    background-color: #33a435;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tel {
+    width: 200px;
+    padding-top: 40px;
+}
+
+.tel p {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.tel p:nth-child(3) {
+    line-height: 24px;
+    font-size: 19px;
+    color: #0b7da7;
+    font-weight: 700;
+    margin-top: -4px;
+}
+
+.header-n {
+    background-color: #33a435;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+}
+
+.header-n-contain {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.header-n-contain ul li {
+    float: left;
+}
+
+.header-n-contain ul li a {
+    display: inline-block;
+    padding: 0 36px;
+    color: #ffffff;
+}
+
+.enter {
+    width: 215px;
+    border: 1px solid #33a435;
+    height: 308px;
+}
+
+.enter-school,
+.enter-major {
+    border-bottom: 1px solid #dadada;
+    padding: 15px 12px 15px 12px;
+    position: relative;
+}
+
+.more-school {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.enter-school:hover,
+.enter-major:hover {
+    background: #e2efe1;
+}
+
+.enter-school img:first-child,
+.enter-major img:first-child {
+    margin-right: 10px;
+}
+
+.enter-school p,
+.enter-major p {
+    font-size: 15px;
+    font-weight: 700;
+    color: #454545;
+}
+
+.enter-school p:nth-child(3),
+.enter-major p:nth-child(3) {
+    font-size: 12px;
+    font-weight: 500;
+    color: #454545;
+}
+
+.enter-school img:nth-child(4),
+.enter-major img:nth-child(4) {
+    margin-top: -27px;
+}
+
+.enter-img {
+    margin: 14px 7px 0;
+    height: 144px;
+}
+
+.scroll {
+    width: 646px;
+    height: 308px;
+    margin-left: 10px;
+}
+
+.test {
+    width: 300px;
+    height: 315px;
+    margin-left: 10px;
+}
+
+.scoretxt {
+    border: 1px solid #dadada;
+    width: 108px;
+    text-align: center;
+    height: 70px;
+}
+
+.scoretxt p {
+    font-size: 16px;
+    color: #ff942c;
+}
+
+.scoretxt em {
+    font-size: 33px;
+    color: #ff942c;
+    font-style: normal;
+}
+
+.schedule {
+    border: 1px solid #dadada;
+    border-left: none;
+    width: 192px;
+    height: 70px;
+    padding: 10px 0 0 17px;
+}
+
+.schedule p {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+    margin-top: 5px;
+}
+
+.test h2 {
+    font-size: 16px;
+    border-left: 4px #3ba732 solid;
+    text-indent: 9px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.info-title {
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.info-title-f {
+    width: 219px;
+    height: 32px;
+    line-height: 32px;
+    background: #e2efe1;
+    text-align: center;
+    border-right: 1px solid #ffffff;
+}
+
+.info-title-r {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background: #e2efe1;
+    text-align: center;
+}
+
+.info-time {
+    font-size: 14px;
+}
+
+.info-time ul li {
+    margin-bottom: 6px;
+    border-bottom: 1px dashed #ddd;
+    height: 29px;
+    line-height: 29px;
+}
+
+.info-time ul li {
+    background: url('red-right-icon.png') no-repeat 0 center;
+    padding-left: 10px;
+}
+
+.info-time ul li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.info-time ul li span {
+    float: right;
+    color: #9c9b9b;
+    font-size: 12px;
+}
+
+.bar {
+    width: 100%;
+    height: 36px;
+    background: #ececec;
+    line-height: 36px;
+}
+
+.bar ul li {
+    width: 95px;
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bar ul li.on {
+    color: #ffffff;
+    background-color: #33a435;
+}
+
+.bar span {
+    float: right;
+    height: 100%;
+}
+
+.bar span a {
+    background-color: #ff942c;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0px 12px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.form {
+    display: none;
+}
+
+.selected {
+    display: block;
+}
+
+.form ul {
+    margin-right: -30px;
+}
+
+.form ul li {
+    width: 226px;
+    float: left;
+    margin: 15px 15px 0 0;
+}
+
+.form ul li a {
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.form ul li a p {
+    font-size: 14px;
+}
+
+.form ul li a:hover p {
+    color: red;
+}
+
+.form ul li a img {
+    width: 100%;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.form ul li a:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -transform: scale(1.1);
+}
+
+.school-content {
+    font-size: 12px;
+}
+
+.school-content .left {
+    width: 50%;
+}
+
+.banner {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.news {
+    width: 387px;
+}
+
+footer {
+    width: 100%;
+    padding: 40px;
+    background-color: #3e9538;
+    overflow: hidden;
+}
+
+.foot-about {
+    width: 500px;
+    line-height: 29px;
+}
+
+.foot-about ul {
+    overflow: hidden;
+}
+
+.foot-about ul li {
+    color: #ffffff;
+    float: left;
+}
+
+.foot-about ul li a {
+    color: #ffffff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.foot-about p {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+    color: #aeffa8;
+}
+
+.foot-wechat {
+    width: 300px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+}
+
+.foot-wechat img {
+    float: left;
+    margin: 0 10px 0 40px;
+}
+
+.foot-wechat p {
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.foot-enter {
+    width: 387px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+}
+
+.foot-enter img {
+    float: left;
+    margin: 0 10px 0 160px;
+}
+
+.foot-enter p {
+    color: #ffffff;
+    line-height: 20px;
+}
+.credible-img{
+    margin-top:20px;
+    margin-left: 32px;
+}
+.credible-img img{
+    margin: 0 5px 0 5px;
+}
+</style>
+<script src="jquery.js"></script>
+
+<body>
+    <header>
+        <div class="header-t">
+            <div class="header-t-container">
+                <div class="header-t-l left">
+                    <p>育鹏专升本教育信息网-专业专升本招生培训网站</p>
+                </div>
+                <div class="header-t-r right">
+                    <ul>
+                        <li><a>注册</a>|</li>
+                        <li><a>登录</a>|</li>
+                        <li><a>找学校</a>|</li>
+                        <li><a>找专业</a>|</li>
+                        <li><a>手机站</a>|</li>
+                        <li><a>网站地图</a></li>
+                        <li><a>返回网站首页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-c">
+            <div class="header-c-contain">
+                <div class="logo left">
+                    <div class="logo-img left">
+                        <img src="y-peng-logo.png">
+                    </div>
+                    <div class="location left">
+                        地区专题
+                        <img src="location-icon.png">
+                    </div>
+                </div>
+                <div class="search left">
+                    <div class="search-type left">
+                        搜索全部
+                        <img src="location-icon.png">
+                    </div>
+                    <div class="search-input left">
+                        <input type="text" placeholder="请输入你想要搜索的关键词">
+                    </div>
+                    <div class="search-btn left">
+                        搜索
+                    </div>
+                </div>
+                <div class="tel right">
+                    <img class="left" src="tel-icon.png">
+                    <p>报名咨询电话</p>
+                    <p>010-82962882</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-n">
+            <div class="header-n-contain">
+                <ul>
+                    <li><a>首页</a></li>
+                    <li><a>远程教育</a></li>
+                    <li><a>自学考试</a></li>
+                    <li><a>成人高考</a></li>
+                    <li><a>统考专升本</a></li>
+                    <li><a>电大</a></li>
+                    <li><a>招生简章</a></li>
+                    <li><a>常见问题</a></li>
+                    <li><a>网上报名</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="enter left">
+                <div class="enter-school">
+                    <img class="left" src="school.png">
+                    <p>找学校</p>
+                    <p>全国100+院校</p>
+                    <img class="right" src="right-icon.png">
+                    <div class="more-school">
+                    </div>
+                </div>
+                <div class="enter-major">
+                    <img class="left" src="major.png">
+                    <p>找专业</p>
+                    <p>包含40+专业</p>
+                    <img class="right" src="right-icon.png">
+                </div>
+                <div class="enter-img">
+                    <a>
+                        <img src="enter-img.png">
+                    </a>
+                </div>
+            </div>
+            <div class="scroll left">
+                <img src="ad_1.png">
+            </div>
+            <div class="test left">
+                <div style="overflow:hidden">
+                    <div class="scoretxt left">
+                        <p>满意度</p>
+                        <em>100%</em>
+                    </div>
+                    <div class="schedule left">
+                        <p>已服务学员 : <span>10837</span>人</p>
+                        <p>已有评论数 : <span>10003</span>条</p>
+                    </div>
+                </div>
+                <h2>2016年专升本考试时间提醒</h2>
+                <div class="test-info">
+                    <div class="info-title">
+                        <p class="info-title-f left">考试名称</p>
+                        <p class="info-title-r left">开考日期</p>
+                    </div>
+                    <div class="info-time">
+                        <ul>
+                            <li><a>2016年山东电大考试时间</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="bar">
+                <ul>
+                    <li class="on">远程教育</li>
+                    <li>自学考试</li>
+                    <li>成人高考</li>
+                </ul>
+                <span><a>更多</a></span>
+            </div>
+            <div>
+                <div class="form selected">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="school-img.png">
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="banner">
+                <img src="dalianligong-banner.png">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="news left">
+                <div class="bar">
+                    <ul>
+                        <li class="on">考试动态</li>
+                        <li>考试科目</li>
+                        <li>考试报名</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>33333333333333333333</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news left" style="margin-left:12px">
+                <div class="bar">
+                    <ul>
+                        <li class="on">准考证</li>
+                        <li>分数线</li>
+                        <li>成绩查询</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>33333333333333333333</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news left" style="margin-left:12px">
+                <div class="bar">
+                    <ul>
+                        <li class="on">复习辅导</li>
+                        <li>经验技巧</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="banner">
+                <img src="dalianligong-banner.png">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="news left">
+                <div class="bar">
+                    <ul>
+                        <li class="on">考试动态</li>
+                        <li>考试科目</li>
+                        <li>考试报名</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>33333333333333333333</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news left" style="margin-left:12px">
+                <div class="bar">
+                    <ul>
+                        <li class="on">准考证</li>
+                        <li>分数线</li>
+                        <li>成绩查询</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>33333333333333333333</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news left" style="margin-left:12px">
+                <div class="bar">
+                    <ul>
+                        <li class="on">复习辅导</li>
+                        <li>经验技巧</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="banner">
+                <img src="dalianligong-banner.png">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="news left">
+                <div class="bar">
+                    <ul>
+                        <li class="on">考试动态</li>
+                        <li>考试科目</li>
+                        <li>考试报名</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>33333333333333333333</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news left" style="margin-left:12px">
+                <div class="bar">
+                    <ul>
+                        <li class="on">准考证</li>
+                        <li>分数线</li>
+                        <li>成绩查询</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>33333333333333333333</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news left" style="margin-left:12px">
+                <div class="bar">
+                    <ul>
+                        <li class="on">复习辅导</li>
+                        <li>经验技巧</li>
+                    </ul>
+                    <span><a>更多</a></span>
+                </div>
+                <div>
+                    <div class="info-time none selected">
+                        <ul>
+                            <li><a>1111111111111111111</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-time none">
+                        <ul>
+                            <li><a>2222222222222222222</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="banner">
+                <img src="dalianligong-banner.png">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="left foot-about">
+                <ul>
+                    <li><a>关于我们</a>|</li>
+                    <li><a>法律声明</a>|</li>
+                    <li><a>项目合作</a>|</li>
+                    <li><a>招贤纳士</a>|</li>
+                    <li><a>联系我们</a></li>
+                </ul>
+                <p>育鹏专升本教育信息网 Copyright ©2015-2017 y-peng.com ALL rights reserved</p>
+                <p>京ICP备15059158号-1 京公网安备11011402010032号 <span><a><img src="http://icon.cnzz.com/img/pic.gif"></a></span></p>
+            </div>
+            <div class="left foot-wechat">
+                <img src="wechat.png">
+                <p>官方微信</p>
+                <p>扫一扫关注育鹏专升本</p>
+                <p>精彩活动早知道</p>
+            </div>
+            <div class="left foot-enter">
+                <div>
+                    <img class="left" src="tel-icon.png">
+                    <p>报名咨询电话</p>
+                    <p>010-82962882</p>
+                </div>
+                <div class="credible-img">
+                    <img class="left" src="credible-img.png">
+                    <img class="left" src="credible-img.png">
+                    <img class="left" src="credible-img.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+window.onload = function() {
+    init();
+}
+
+$('.bar ul li').mouseover(function() {
+    $(this).parent().children().removeClass("on");
+    $(this).addClass("on");
+    var index = $(this).index();
+    var form = $(this).parent().parent().next().children();
+    form.removeClass("selected");
+    form[index].className += " selected";
+});
+
+function init() {
+
+}
+</script>
+
+</html>
