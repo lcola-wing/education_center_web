@@ -1,0 +1,411 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #454545;
+    font-family: "Microsoft YaHei", "宋体";
+}
+
+ul {
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.wrapper {
+    width: 1188px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    height: 211px;
+}
+
+.header-t {
+    background-color: #e6e6e6;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    line-height: 30px;
+    color: #454545;
+}
+
+.header-t-container {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.header-t-r ul li {
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+}
+
+.header-t-r ul li a {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.header-t-r ul li a:hover {
+    color: red;
+}
+
+.header-c {
+    height: 121px;
+    line-height: 121px;
+}
+
+.header-c-contain {
+    width: 1188px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo-img {
+    width: 229px;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.location {
+    font-size: 10px;
+    margin-left: 10px;
+    color: #33a435;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: 250px;
+    margin-top: 46px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-type {
+    border: 2px solid #33a435;
+    line-height: 30px;
+    padding-left: 10px;
+    border-right: none;
+    color: #999999;
+}
+
+.search-input {
+    line-height: 30px;
+    border: 2px solid #33a435;
+    border-left: none;
+    border-right: none;
+}
+
+.search-input input {
+    width: 250px;
+    border: 0;
+    outline: none;
+}
+
+.search-btn {
+    line-height: 34px;
+    width: 50px;
+    height: 34px;
+    background-color: #33a435;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tel {
+    width: 200px;
+    padding-top: 40px;
+}
+
+.tel p {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.tel p:nth-child(3) {
+    line-height: 24px;
+    font-size: 19px;
+    color: #0b7da7;
+    font-weight: 700;
+    margin-top: -4px;
+}
+
+.header-n {
+    background-color: #33a435;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+}
+
+.header-n-contain {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.header-n-contain ul li {
+    float: left;
+}
+
+.header-n-contain ul li a {
+    display: inline-block;
+    padding: 0 36px;
+    color: #ffffff;
+}
+
+.enter {
+    width: 215px;
+    border: 1px solid #33a435;
+    height: 308px;
+}
+
+.enter-school,
+.enter-major {
+    border-bottom: 1px solid #dadada;
+    padding: 15px 12px 15px 12px;
+    position: relative;
+}
+
+.more-school {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.enter-school:hover,
+.enter-major:hover {
+    background: #e2efe1;
+}
+
+.enter-school img:first-child,
+.enter-major img:first-child {
+    margin-right: 10px;
+}
+
+.enter-school p,
+.enter-major p {
+    font-size: 15px;
+    font-weight: 700;
+    color: #454545;
+}
+
+.enter-school p:nth-child(3),
+.enter-major p:nth-child(3) {
+    font-size: 12px;
+    font-weight: 500;
+    color: #454545;
+}
+
+.enter-school img:nth-child(4),
+.enter-major img:nth-child(4) {
+    margin-top: -27px;
+}
+
+.enter-img {
+    margin: 14px 7px 0;
+    height: 144px;
+}
+
+.scroll {
+    width: 646px;
+    height: 308px;
+    margin-left: 10px;
+}
+
+.test {
+    width: 300px;
+    height: 315px;
+    margin-left: 10px;
+}
+
+.scoretxt {
+    border: 1px solid #dadada;
+    width: 108px;
+    text-align: center;
+    height: 70px;
+}
+
+.scoretxt p {
+    font-size: 16px;
+    color: #ff942c;
+}
+
+.scoretxt em {
+    font-size: 33px;
+    color: #ff942c;
+    font-style: normal;
+}
+
+.schedule {
+    border: 1px solid #dadada;
+    border-left: none;
+    width: 192px;
+    height: 70px;
+    padding: 10px 0 0 17px;
+}
+
+.schedule p {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "宋体";
+    margin-top: 5px;
+}
+
+.test h2 {
+    font-size: 16px;
+    border-left: 4px #3ba732 solid;
+    text-indent: 9px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.info-title {
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.info-title-f {
+    width: 219px;
+    height: 32px;
+    line-height: 32px;
+    background: #e2efe1;
+    text-align: center;
+    border-right: 1px solid #ffffff;
+}
+
+.info-title-r {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background: #e2efe1;
+    text-align: center;
+}
+
+.info-time {
+    font-size: 14px;
+}
+
+.info-time ul li {
+    margin-bottom: 6px;
+    border-bottom: 1px dashed #ddd;
+    height: 29px;
+    line-height: 29px;
+}
+
+.info-time ul li {
+    background: url('red-right-icon.png') no-repeat 0 center;
+    padding-left: 10px;
+}
+
+.info-time ul li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.info-time ul li span {
+    float: right;
+    color: #9c9b9b;
+    font-size: 12px;
+}
+
+.bar {
+    width: 100%;
+    height: 36px;
+    background: #ececec;
+    line-height: 36px;
+}
+
+.bar ul li {
+    width: 95px;
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bar ul li.on {
+    color: #ffffff;
+    background-color: #33a435;
+}
+
+.bar span {
+    float: right;
+}
+
+.bar span a {
+    background-color: #ff942c;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0px 12px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.form {
+    background-color: #eeeeee;
+    display: none;
+}
+
+.selected {
+    display: block;
+}
+.form ul{
+    margin-right: -30px;
+}
+.form ul li {
+    width: 226px;
+    float: left;
+    margin: 15px 15px 0 0;
+}
+
+.form ul li a {
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.form ul li a p {
+    font-size: 14px;
+}
+
+.form ul li a:hover p {
+    color: red;
+}
+
+.form ul li a img {
+    width: 100%;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.form ul li a:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -transform: scale(1.1);
+}
+
+.school-content {
+    font-size: 12px;
+}
+
+.school-content .left {
+    width: 50%;
+}

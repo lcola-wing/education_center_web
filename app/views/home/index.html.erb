@@ -1,0 +1,212 @@
+<body>
+    <header>
+        <div class="header-t">
+            <div class="header-t-container">
+                <div class="header-t-l left">
+                    <p>育鹏专升本教育信息网-专业专升本招生培训网站</p>
+                </div>
+                <div class="header-t-r right">
+                    <ul>
+                        <li><a>注册</a>|</li>
+                        <li><a>登录</a>|</li>
+                        <li><a>找学校</a>|</li>
+                        <li><a>找专业</a>|</li>
+                        <li><a>手机站</a>|</li>
+                        <li><a>网站地图</a></li>
+                        <li><a>返回网站首页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-c">
+            <div class="header-c-contain">
+                <div class="logo left">
+                    <div class="logo-img left">
+                        <%= image_tag "y-peng-logo.png" %>
+                    </div>
+                    <div class="location left">
+                        地区专题
+                        <%= image_tag "location-icon.png" %>
+                    </div>
+                </div>
+                <div class="search left">
+                    <div class="search-type left">
+                        搜索全部
+                        <%= image_tag "location-icon.png" %>
+                    </div>
+                    <div class="search-input left">
+                        <input type="text" placeholder="请输入你想要搜索的关键词">
+                    </div>
+                    <div class="search-btn left">
+                        搜索
+                    </div>
+                </div>
+                <div class="tel right">
+                    <%= image_tag "tel-icon.png", class: "left" %>
+                    <p>报名咨询电话</p>
+                    <p>010-82962882</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-n">
+            <div class="header-n-contain">
+                <ul>
+                    <li><a>首页</a></li>
+                    <li><a>远程教育</a></li>
+                    <li><a>自学考试</a></li>
+                    <li><a>成人高考</a></li>
+                    <li><a>统考专升本</a></li>
+                    <li><a>电大</a></li>
+                    <li><a>招生简章</a></li>
+                    <li><a>常见问题</a></li>
+                    <li><a>网上报名</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="enter left">
+                <div class="enter-school">
+                    <%= image_tag "school.png", class: "left" %>
+                    <p>找学校</p>
+                    <p>全国100+院校</p>
+                    <%= image_tag "right-icon.png", class: "right" %>
+                    <div class="more-school">
+                    </div>
+                </div>
+                <div class="enter-major">
+                    <%= image_tag "major.png", class: "left" %>
+                    <p>找专业</p>
+                    <p>包含40+专业</p>
+                    <%= image_tag "right-icon.png", class: "right" %>
+                </div>
+                <div class="enter-img">
+                    <a>
+                        <%= image_tag "enter-img.png" %>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll left">
+                <%= image_tag "ad_1.png" %>
+            </div>
+            <div class="test left">
+                <div style="overflow:hidden">
+                    <div class="scoretxt left">
+                        <p>满意度</p>
+                        <em>100%</em>
+                    </div>
+                    <div class="schedule left">
+                        <p>已服务学员 : <span>10837</span>人</p>
+                        <p>已有评论数 : <span>10003</span>条</p>
+                    </div>
+                </div>
+                <h2>2016年专升本考试时间提醒</h2>
+                <div class="test-info">
+                    <div class="info-title">
+                        <p class="info-title-f left">考试名称</p>
+                        <p class="info-title-r left">开考日期</p>
+                    </div>
+                    <div class="info-time">
+                        <ul>
+                            <li><a>2016年山东电大考试时间</a><span>2016-03-12</span></li>
+                            <li><a>2016年甘肃电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年宁夏电大考试时间</a><span>2016-03-06</span></li>
+                            <li><a>2016年浙江大学远程教育秋季考</a><span>2016-05-24</span></li>
+                            <li><a>2016年江南大学远程教育考试时</a><span>2016-08-31</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="bar">
+                <ul>
+                    <li class="on">远程教育</li>
+                    <li>自学考试</li>
+                    <li>成人高考</li>
+                </ul>
+                <span><a>更多</a></span>
+            </div>
+            <div>
+                <div class="form selected">
+                    <ul>
+                      <% 10.times do %>
+                        <li>
+                            <a>
+                                <%= image_tag "school-img.png" %>
+                                <p>国际经济与贸易</p>
+                            </a>
+                            <div class="school-content">
+                                <div class="left">
+                                    <p>学费：100元/学分</p>
+                                    <p>层次：专升本</p>
+                                </div>
+                                <div class="left">
+                                    <p>满意度：100%</p>
+                                    <p>类别：远程教育</p>
+                                </div>
+                            </div>
+                        </li>
+                      <% end %>
+                    </ul>
+                </div>
+                <div class="form">2</div>
+                <div class="form">3</div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+<script>
+window.onload = function() {
+    init();
+}
+
+// function setTab() {
+//     var oBar = document.getElementsByClassName('bar');
+//     for (var i = 0; i < oBar.length; i++) {
+//         var oLi = oBar[i].getElementsByTagName('li');
+//         for (var j = 0; j < oLi.length; j++) {
+
+//             // oLi[j].onclick = function() {
+//             //         var parent = oLi[j].parentNode;
+//             //         for (var k = 0; k < oLi.length; k++) {
+//             //             parent.children[k].className = "";
+//             //         }
+//             //         this.className = "on";
+//             //     }
+//             (function(j) {
+//                 oLi[j].onclick = function() {
+//                     var parent = oLi[j].parentNode;
+//                     for (var k = 0; k < oLi.length; k++) {
+//                         parent.children[k].className = "";
+//                     }
+//                     this.className = "on";
+//                 }
+//             })(j);
+//             // oLi[j].addEventListener('click', () => {
+//             //     var parent = oLi[j].parentNode;
+//             //     for (var k = 0; k < oLi.length; k++) {
+//             //         parent.children[k].className = "";
+//             //     }
+//             //     this.className = "on";
+//             // });
+//         }
+//     }
+// }
+$('.bar ul li').mouseover(function() {
+    $(this).parent().children().removeClass("on");
+    $(this).addClass("on");
+    var index = $(this).index();
+    var form = $(this).parent().parent().next().children();
+    form.removeClass("selected");
+    form[index].className += " selected";
+});
+
+function init() {
+
+}
+</script>
+
+</html>
