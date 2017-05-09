@@ -7,4 +7,8 @@ class HomeController < ApplicationController
     
   end
   
+  def self_taught_examination
+    
+  end
+  
 end

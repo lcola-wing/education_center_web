@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  get 'home/distance_education' => 'home#distance_education'
+  get 'home/index' => 'home#index'
+  get 'ycjy/' => 'home#distance_education'
+  get 'zxks/' => 'home#self_taught_examination'
    
   
   root 'home#index'
