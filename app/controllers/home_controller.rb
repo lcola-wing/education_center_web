@@ -28,4 +28,18 @@ class HomeController < ApplicationController
     
   end
   
+  #招生简章
+  def enrollment_guide
+    
+  end
+  
+  #搜索
+  def search
+    
+  end
+  
+  def school
+    render :layout => 'school'
+  end
+  
 end

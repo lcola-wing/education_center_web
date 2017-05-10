@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EducationCenterWeb</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+        <div class="header-t">
+            <div class="header-t-container">
+                <div class="header-t-l left">
+                    <p>育鹏专升本教育信息网-专业专升本招生培训网站</p>
+                </div>
+                <div class="header-t-r right">
+                    <ul>
+                        <li><a>找学校</a>|</li>
+                        <li><a>找专业</a>|</li>
+                        <li><a>手机站</a>|</li>
+                        <li><a>网站地图</a></li>
+                        <li><a>返回网站首页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+<div class="menu2 m_bottom">
+
+    <style type="text/css">
+
+    .menu a {
+
+        padding: 0 22px;
+
+    }
+
+    </style>
+
+    <div class="w m">
+
+        <ul class="nav">
+
+            <li class="active first">
+                                <span>学校首页</span>
+                            </li>
+
+            <li>
+                                <a href="school-39-prospectus-1.html">招生简章</a>
+                            </li>
+
+            <li>
+                                <a href="school-39-dongtai-1.html">学校动态</a>
+                            </li>
+            <li>
+                                <a href="school-39-remote-1.html">远程教育</a>
+                            </li>
+            <li>
+                                <a href="school-39-selfstudy-1.html">自学考试</a>
+                            </li>
+            <li>
+                                <a href="school-39-chengkao-1.html">成人高考</a>
+                            </li>
+
+            <li>
+                                <a href="school-39-intro-1.html">专业介绍</a>
+                            </li>
+
+            <li>
+                                <a href="school-39-teacher-1.html">师资力量</a>
+                            </li>
+            
+            <li>
+                                <a href="school-39-zhinan-1.html">报考指南</a>
+                            </li>
+
+            <li>
+                                <a href="school-39-dianping-1.html">网友点评</a>
+                            </li>
+
+            
+            <li><a href="http://ask.y-peng.com/explore/category-74" target="_blank">常见问题</a></li>
+
+            
+            <li>
+                                <a href="school-39-baoming.html">网上报名</a>
+                            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+    <%= yield %>
+    <%= render "shared/footer" %>
+  </body>
+  
+</html>
