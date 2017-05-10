@@ -110,6 +110,7 @@ header {
     margin-top: 46px;
     font-size: 12px;
     cursor: pointer;
+    border:none;
 }
 
 .search-type {
@@ -270,7 +271,7 @@ header {
     font-style: normal;
 }
 
-.schedule {
+.sche {
     border: 1px solid #dadada;
     border-left: none;
     width: 192px;
@@ -278,7 +279,7 @@ header {
     padding: 10px 0 0 17px;
 }
 
-.schedule p {
+.sche p {
     font-size: 12px;
     font-family: "Microsoft YaHei", "宋体";
     margin-top: 5px;
