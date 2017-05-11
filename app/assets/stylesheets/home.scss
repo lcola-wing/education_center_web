@@ -43,6 +43,10 @@ ul {
     display: none;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 header {
     height: 211px;
 }
@@ -110,7 +114,7 @@ header {
     margin-top: 46px;
     font-size: 12px;
     cursor: pointer;
-    border:none;
+    border: none;
 }
 
 .search-type {
@@ -503,10 +507,64 @@ footer {
     color: #ffffff;
     line-height: 20px;
 }
-.credible-img{
-    margin-top:20px;
+
+.credible-img {
+    margin-top: 20px;
     margin-left: 32px;
 }
-.credible-img img{
+
+.credible-img img {
     margin: 0 5px 0 5px;
+}
+
+.ycjy .overflow{
+    margin-bottom: 20px;
+}
+
+.ycjy h2 {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #454545;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.ycjy h3 {
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #3e9538;
+    width: 250px;
+    text-align: center;
+}
+
+.ycjy-text h3:first-child {
+    padding: 10px 50px 0;
+}
+
+.ycjy-text h3:nth-child(2) {
+    padding: 0 50px 10px;
+}
+
+.ycjy-table table{
+    background-color: #e2efe1;
+    padding: 10px;
+    width: 540px;
+}
+
+.ycjy-table table tr:first-child {
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+.ycjy-table table tr:nth-child(2) {
+    border-top: 1px solid #ffffff;
+}
+
+.ycjy-table table tr td {
+    font-size: 20px;
+    color: #000000;
+    width: 100px;
+    white-space: nowrap;
+    text-align: center;
 }
