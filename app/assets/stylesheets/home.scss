@@ -346,6 +346,135 @@ header {
     font-size: 12px;
 }
 
+.introduce-1 {
+    .title{
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .title h2 {
+        font-size: 55px;
+        color: #33a435;
+        width: 550px;
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #000000;
+        position: relative;
+    }
+    .title span {
+        width: 5px;
+        height: 5px;
+        background-color: #000000;
+        display: inline-block;
+        position: absolute;
+        bottom: -3px;
+    }
+    .title span.ldot {
+        left: 0;
+    }
+    .title span.rdot {
+        right: 0;
+    }
+    .title p {
+        padding: 10px 0 10px 0;
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .title div {
+        font-size: 100px;
+        color: #f9f5f5;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+    }
+    .content{
+
+    }
+    .content .text-l{
+        width: 400px;
+    }
+    .content .text-l ul{
+        width: 400px;
+    }
+    .content .text-l ul li{
+        width: 400px;
+        overflow: hidden;
+        margin-bottom: 15px; 
+    }
+    .content .text-l ul li .left{
+        width:340px;
+        padding-bottom:10px;
+        border-bottom:1px dashed #454545;
+    }
+    .content .text-l ul li h4{
+        text-align: right;
+        font-size: 14px;
+        color: #33a435;
+    }
+    .content .text-l ul li p{
+        text-align: right;
+        font-size: 14px;
+        
+    }
+    .content .text-l ul li img{
+        width: 50px;
+        height: 50px;
+        border: 2px solid #33a435;
+        border-radius: 100% 100% 100% 100%;
+    }
+    .text-c{
+        width: 388px;
+        float: left;
+        position: relative;
+
+    }
+    .text-c img{
+        width: 250px;
+        height: 250px;
+        border: 2px solid #33a435;
+        border-radius: 100% 100% 100% 100%;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translate3d(-50%,0,0);
+    }
+    .content .text-r{
+        width: 400px;
+    }
+    .content .text-r ul{
+        width: 400px;
+    }
+    .content .text-r ul li{
+        width: 400px;
+        overflow: hidden;
+        margin-bottom: 15px; 
+    }
+    .content .text-r ul li .right{
+        padding-bottom:10px;
+        border-bottom:1px dashed #454545;
+    }
+    .content .text-r ul li h4{
+        font-size: 14px;
+        color: #33a435;
+    }
+    .content .text-r ul li p{
+        font-size: 14px;
+        
+    }
+    .content .text-r ul li img{
+        width: 50px;
+        height: 50px;
+        border: 2px solid #33a435;
+        border-radius: 100% 100% 100% 100%;
+    }
+
+
+
+
+}
+
 .bar {
     width: 100%;
     height: 36px;
@@ -517,7 +646,7 @@ footer {
     margin: 0 5px 0 5px;
 }
 
-.ycjy .overflow{
+.ycjy .overflow {
     margin-bottom: 20px;
 }
 
@@ -546,7 +675,7 @@ footer {
     padding: 0 50px 10px;
 }
 
-.ycjy-table table{
+.ycjy-table table {
     background-color: #e2efe1;
     padding: 10px;
     width: 540px;
@@ -554,7 +683,6 @@ footer {
 
 .ycjy-table table tr:first-child {
     border-bottom: 1px solid #ffffff;
-    
 }
 
 .ycjy-table table tr:nth-child(2) {
@@ -569,30 +697,20 @@ footer {
     text-align: center;
 }
 
-.compare table tr{
-
+.compare table tr {
+    padding: 10px;
 }
 
-.compare table tr th{
-    font-size: 22px;
+.compare table tr th {
+    font-size: 18px;
     color: #000000;
+    background-color: #3e9538;
+    padding: 5px;
 }
 
-.compare table tr td{
-    font-size: 20px;
-    width: 150px;
+.compare table tr td {
+    font-size: 14px;
+    width: 175px;
+    background-color: #e2efe1;
+    padding: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
