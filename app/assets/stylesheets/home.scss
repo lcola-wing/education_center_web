@@ -664,6 +664,74 @@ header {
     }
 }
 
+.introduce-4{
+    overflow: hidden;
+    margin-bottom: 20px;
+    .title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .title h2 {
+        font-size: 55px;
+        color: #33a435;
+        width: 550px;
+        display: inline-block;
+        padding-bottom: 5px;
+        position: relative;
+        line-height: 100px;
+    }
+    .title div {
+        font-size: 100px;
+        color: #f9f5f5;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        line-height: 100px;
+    }
+    .certificate ul{
+        width: 1055px;
+        margin: 0 auto;
+    }
+    .certificate ul li{
+        float: left;
+        margin: 0 20px;
+    }
+    .certificate ul li .block{
+        text-align: center;
+        border: 1px solid #ded9d9;
+        background-color: #f7f6f6;
+    }
+    .certificate ul li:hover .block{
+        border: 1px solid #33a435;
+    }
+    .certificate ul li .block h3{
+        color: #33a435;
+        font-size: 20px;
+        line-height: 64px;
+    }
+    .certificate ul li .block p{
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #666666;
+    }
+    .certificate ul li .block a{
+        padding: 10px;
+        display: inline-block;
+        border: 1px solid #33a435;
+        margin: 25px 0;
+        color: #666666;
+    }
+    .certificate ul li .block a:hover{
+        color: #ffffff;
+        background-color: #33a435;
+    }
+}
+
 .bar {
     width: 100%;
     height: 36px;
