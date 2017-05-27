@@ -22,14 +22,56 @@
                         <%= image_tag "y-peng-logo.png" %>
                     </div>
                     <div class="location left">
-                        地区专题
+                        <span>
+                            地区专题
                         <%= image_tag "location-icon.png" %>
+                        </span>
+                        
+                    </div>
+                    <div class="more-location">
+                        <div class="title">
+                            <h2>全部地区专题</h2>
+                        </div>
+                        
+                        <dl>
+                        <dt>广东</dt>
+                        <dd>
+                            <em><a target="_blank">广州市</a></em>
+                            <em><a target="_blank">深圳市</a></em>
+                            <em><a target="_blank">珠海市</a></em>
+                            <em><a target="_blank">汕头市</a></em>
+                            <em><a target="_blank">韶关市</a></em>
+                            <em><a target="_blank">佛山市</a></em>
+                            <em><a target="_blank">江门市</a></em>
+                            <em><a target="_blank">湛江市</a></em>
+                            <em><a target="_blank">茂名市</a></em>
+                            <em><a target="_blank">肇庆市</a></em>
+                            <em><a target="_blank">惠州市</a></em>
+                            <em><a target="_blank">梅州市</a></em>
+                            <em><a target="_blank">汕尾市</a></em>
+                            <em><a target="_blank">河源市</a></em>
+                            <em><a target="_blank">阳江市</a></em>
+                            <em><a target="_blank">清远市</a></em>
+                            <em><a target="_blank">东莞市</a></em>
+                            <em><a target="_blank">中山市</a></em>
+                            <em><a target="_blank">潮州市</a></em>
+                            <em><a target="_blank">揭阳市</a></em>
+                            <em><a target="_blank">云浮市</a></em>
+                        </dd>
                     </div>
                 </div>
                 <div class="search left">
                     <div class="search-type left">
-                        搜索全部
-                        <%= image_tag "location-icon.png" %>
+                        <div>
+                            <em id="search-type">搜索全部</em>
+                            <%= image_tag "location-icon.png" %>
+                        </div>
+                        <ul>
+                            <li>搜索全部</li>
+                            <li>搜索学院</li>
+                            <li>搜索专业</li>
+                            <li>搜索简章</li>
+                        </ul>
                     </div>
                     <div class="search-input left">
                         <input type="text" placeholder="请输入你想要搜索的关键词">
@@ -59,3 +101,44 @@
             </div>
         </div>
     </header>
+    <script type="text/javascript">
+        var on = true;
+        $('.search-type div').click(function(){
+            if (on) {
+                $('.search-type ul').css('display','block');
+                on = false;
+            }else{
+                $('.search-type ul').css('display','none');
+                on = true;
+            }
+        })
+        var on_1 = true;
+        $('.location span').click(function(){
+            if (on_1) {
+                $('.more-location').css('display','block');
+                on_1 = false;
+            }else{
+                $('.more-location').css('display','none');
+                on_1 = true;
+            }
+        })
+        function setColor(){
+            $('.search-type ul li').each(function(){
+                var liEl = this.innerHTML;
+                if(document.getElementById('search-type').innerHTML == liEl){
+                    this.className = "on";
+                }else{
+                    this.className = "";
+                }
+            })
+        }
+        
+        $('.search-type ul li').click(function(){
+            var liEl = this.innerHTML;
+            document.getElementById('search-type').innerHTML = liEl;
+            $('.search-type ul').css('display','none');
+            on = true;
+            setColor();
+        })
+        setColor();
+    </script>
