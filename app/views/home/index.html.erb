@@ -1040,20 +1040,5 @@
         </div>
     </div>
   <script>
-  window.onload = function() {
-      init();
-  }
   
-  $('.bar ul li').mouseover(function() {
-      $(this).parent().children().removeClass("on");
-      $(this).addClass("on");
-      var index = $(this).index();
-      var form = $(this).parent().parent().next().children();
-      form.removeClass("selected");
-      form[index].className += " selected";
-  });
-  
-  function init() {
-  
-  }
   </script>
